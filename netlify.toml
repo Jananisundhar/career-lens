@@ -1,0 +1,8 @@
+[build]
+  # Static pages live in public/; the API runs as Netlify Functions.
+  # Overrides the old "make all" build command set in the Netlify UI.
+  command = "echo 'No build step needed'"
+  publish = "public"
+
+[build.environment]
+  NODE_VERSION = "22"
